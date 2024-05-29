@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: url('OpenSansHebrew-Bold.eot');
+    src: url('OpenSansHebrew-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OpenSansHebrew-Bold.woff2') format('woff2'),
+        url('OpenSansHebrew-Bold.woff') format('woff'),
+        url('OpenSansHebrew-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: url('OpenSansHebrew-Regular.eot');
+    src: url('OpenSansHebrew-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OpenSansHebrew-Regular.woff2') format('woff2'),
+        url('OpenSansHebrew-Regular.woff') format('woff'),
+        url('OpenSansHebrew-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

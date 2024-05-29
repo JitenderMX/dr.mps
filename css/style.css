@@ -1,78 +1,29 @@
-/* ------------------------------ 
-    ************** Table Of Content  ************** 
-                 --------------------
-                 
-01. =Google Font
-02. =Base
-03. =Section padding margin
-04. =Heading
-05. =Main Button
-06. =Header
-07. =Footer
-08. =BreadCrum
-
-
-
-
-Font Size System 
------------------
-10px / 12px / 16px / 18px / 20px / 24px / 30px / 36px / 44px / 52px / 62px / 74px / 86px / 98px 
-
-Spacing System 
------------------
-2px / 4px / 8px / 12px / 16px / 24px / 32px / 48px / 64px / 80px / 96px / 128px  
-
--------------------------------------------------------*/
-
-
-/* 01. Google Font Start ------------------------------ */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
-/* ------------- Google Font End ------------- */
-
-
-/* 02.base Start ------------------------------ */
+/* Base Start ------------------------------ */
 
 :root {
-    --primary: ;
-    --secondary: ;
-    --font-family1: ;
-    --font-family2: ;
-}
-
-html {
-    font-size: 62.5%;
+    --th-bg-1: #163A4F;
+    --th-bg-2: #ED5A2E;
+    --th-bg-3: #ffffff;
+    --th-text-1: #494949;
+    --th-text-2: #5A5A5A;
+    --th-text-3: #ffffff;
+    --th-text-4: #163A4F;
+    --th-fs-h1: 64px;
+    --th-fs-h2: 36px;
+    --th-fs-h3: 32px;
+    --th-fs-h4: 24px;
+    --th-fs-h5: 20px;
+    --th-fs-h6: 18px;
+    --font-family: 'Open Sans Hebrew';
 }
 
 body {
-    color: #222;
-    font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
-.text-font {
-    font-family: '', sans-serif;
-}
-
-.text-primary {
-    color: var(--primary);
-}
-
-.text-secondary {
-    color: var(--secondary);
-}
-
-.bg-primary {
-    background-color: var(--primary);
-}
-
-.bg-secondary {
-    background-color: var(--secondary);
-}
-
-a {
-    text-decoration: none;
-    color: #222;
+.container-xxl {
+    max-width: 1600px;
+    padding: 0px 20px;
 }
 
 h1,
@@ -81,45 +32,290 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-family);
     letter-spacing: -1px;
     line-height: 1.2;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--th-fs-h1);
+}
+
+h2 {
+    font-size: var(--th-fs-h2);
+}
+
+h3 {
+    font-size: var(--th-fs-h3);
+}
+
+h4 {
+    font-size: var(--th-fs-h4);
+}
+
+h5 {
+    font-size: var(--th-fs-h5);
+}
+
+h6 {
+    font-size: var(--th-fs-h6);
 }
 
 p {
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
 }
 
+a {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
+    text-decoration: none;
+}
+
+.th-btn {
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h6);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.th-btn.light {
+    background-color: var(--th-bg-3);
+    color: var(--th-text-4);
+}
+
+.th-btn.dark {
+    background-color: var(--th-bg-1);
+    color: var(--th-text-3);
+}
 
 /* Scroll Bar style start */
 
-::-webkit-scrollbar {
-    /* width */
-    /* width: 10px; */
+/* ::-webkit-scrollbar {
+    width: 10px;
 }
 
 ::-webkit-scrollbar:hover {
-    /* width: 50px; */
+    width: 50px;
 }
 
  ::-webkit-scrollbar-track {
-    /* Track */
-    /* background-color: ; */
+    Track
+    background-color: ;
 }
 
  ::-webkit-scrollbar-thumb {
-    /* Handle */
-    /* background-color: ; */
-}
+    Handle
+    background-color: ;
+} */
 
 
 /* Scroll Bar style End */
 
 
-/* ------------- base End ------------- */
+/* ------------- Base End ------------- */
 
 
-/* 04. Scetion Start ------------------------------ */
+/* 01. Header Section Start ------------------------------ */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0.1) 0%, rgba(111, 111, 111, 0.1) 100%);
+    z-index: 10;
+}
+
+.header {
+    padding: 15px 0px;
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0) 0%, rgba(111, 111, 111, 0) 100%);
+}
+
+.header .navbar-brand {
+    max-width: 220px;
+    width: 100%;
+}
+
+.header .nav-link {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px;
+    color: var(--th-text-3);
+}
+
+.header .menu-btn .fal {
+    font-size: var(--th-fs-h3);
+    color: var(--th-text-3);
+}
+
+/* ------------- Header Section End ------------- */
 
 
-/* -------------  Scetion  End ------------- */
+/* 02.Hero Section Start ------------------------------ */
+.hh-img img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hh-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hh-text h5 {
+    color: var(--th-text-3);
+    font-weight: 700;
+    line-height: 27.24px;
+    letter-spacing: 0.08em;
+}
+
+.hh-icon {
+    margin-top: 20px;
+}
+
+.hh-icon .fas {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid var(--th-text-3);
+    font-size: var(--th-fs-h5);
+    color: var(--th-text-3);
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+}
+
+.hh-text h1 {
+    color: var(--th-text-3);
+    position: relative;
+}
+
+.hh-text h1:nth-child(1)::before,
+.hh-text h1:nth-child(2)::before {
+    content: ' ';
+    width: 50%;
+    height: 4px;
+    background-color: var(--th-bg-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.hh-text h1:nth-child(1)::before {
+    left: 0;
+}
+
+.hh-text h1:nth-child(2)::before {
+    right: 0;
+}
+
+/* ------------- Hero Section End ------------- */
+
+/* 03.About Section Start ------------------------------ */
+.ab-left {
+    padding: 60px;
+}
+
+.abl-text {
+    padding: 20px 0px;
+}
+
+.abl-title {
+    font-family: var(--font-family);
+    font-size: 96px;
+    font-weight: bolder;
+    line-height: 1.2;
+    color: var(--th-text-3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--th-bg-2);
+}
+
+.abl-p {
+    color: var(--th-bg-1);
+}
+
+.ab-right {
+    height: 100%;
+    width: 100%;
+    background-color: var(--th-bg-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.abr-text h3,
+.abr-text p {
+    color: var(--th-text-3);
+    margin-bottom: 20px;
+}
+
+/* ------------- About Section End ------------- */
+
+/* 04.Important Announcements Section Start ------------------------------ */
+.important-announcements {
+    padding: 80px 0px;
+}
+
+.impa-left {
+    background-color: var(--th-bg-2);
+    padding: 50px 30px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--th-text-3);
+}
+
+.impa-sl-item {
+    background-color: rgba(237, 237, 237, 1);
+    padding: 40px 20px;
+    height: 380px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impa-slider-arrow .fa-solid {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--th-bg-2);
+    color: var(--th-text-3);
+    cursor: pointer;
+}
+
+/* ------------- Important Announcements Section End ------------- */
+
+/* 05.College Experience Section Start ------------------------------ */
+.college-experience{
+    padding: 80px 0px;
+    background-color: var(--th-bg-1);
+}
+.h-line{
+    width: 10px;
+    height: 100%;
+    background-color: var(--th-bg-2);
+}
+.h-text{
+    color: var(--th-text-3);
+    text-transform: uppercase;
+}
+.h-textsdf p{
+    color: var(--th-text-3);
+}
+/* ------------- College Experience Section End ------------- */
