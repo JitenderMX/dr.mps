@@ -8,6 +8,7 @@
     --th-text-2: #5A5A5A;
     --th-text-3: #ffffff;
     --th-text-4: #163A4F;
+    --th-text-5: #ED5A2E;
     --th-fs-h1: 64px;
     --th-fs-h2: 36px;
     --th-fs-h3: 32px;
@@ -22,7 +23,7 @@ body {
 }
 
 .container-xxl {
-    max-width: 1600px;
+    max-width: 1800px;
     padding: 0px 20px;
 }
 
@@ -74,8 +75,9 @@ a {
 }
 
 .th-btn {
-    padding: 20px 30px;
+    padding: 10px 25px;
     border-radius: 12px;
+    border: none;
     display: inline-block;
     font-family: var(--font-family);
     font-size: var(--th-fs-h6);
@@ -84,13 +86,17 @@ a {
 }
 
 .th-btn.light {
-    background-color: var(--th-bg-3);
-    color: var(--th-text-4);
+    background-color: var(--th-bg-1);
+    color: var(--th-text-3);
 }
 
 .th-btn.dark {
-    background-color: var(--th-bg-1);
+    background-color: var(--th-bg-2);
     color: var(--th-text-3);
+}
+
+#about-page main {
+    margin-top: 112px;
 }
 
 /* Scroll Bar style start */
@@ -126,7 +132,6 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(237, 237, 237, 0.1) 0%, rgba(111, 111, 111, 0.1) 100%);
     z-index: 10;
 }
 
@@ -147,9 +152,33 @@ a {
     color: var(--th-text-3);
 }
 
-.header .menu-btn .fal {
+.header.header-dark .nav-link {
+    color: var(--th-text-3);
+}
+
+.header.header-light .nav-link {
+    color: var(--th-text-4);
+}
+
+.header .menu-btn {
+    cursor: pointer;
+}
+
+.header.header-dark .menu-btn .fa-sharp {
     font-size: var(--th-fs-h3);
     color: var(--th-text-3);
+}
+
+.header.header-light .menu-btn .fa-sharp {
+    font-size: var(--th-fs-h3);
+    color: var(--th-text-4);
+}
+
+#home-page .header-light {
+    display: none;
+}
+#about-page .header-dark {
+    display: none;
 }
 
 /* ------------- Header Section End ------------- */
@@ -256,6 +285,10 @@ a {
     padding: 0px 60px;
 }
 
+.abr-text h2 {
+    color: var(--th-text-3);
+}
+
 .abr-text h3,
 .abr-text p {
     color: var(--th-text-3);
@@ -287,35 +320,415 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
-
-.impa-slider-arrow .fa-solid {
+.slider-arrow{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.slider-arrow .fa-solid {
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    line-height: 50px !important;
     border-radius: 50%;
     text-align: center;
     background-color: var(--th-bg-2);
     color: var(--th-text-3);
     cursor: pointer;
 }
+.slider-arrow.light .fa-solid {
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    color: var(--th-text-3);
+    border: 1px solid var(--th-bg-3);
+    cursor: pointer;
+}
 
 /* ------------- Important Announcements Section End ------------- */
 
 /* 05.College Experience Section Start ------------------------------ */
-.college-experience{
+.college-experience {
     padding: 80px 0px;
     background-color: var(--th-bg-1);
 }
-.h-line{
+
+.h-line {
     width: 10px;
     height: 100%;
     background-color: var(--th-bg-2);
 }
-.h-text{
+
+.h-text {
     color: var(--th-text-3);
     text-transform: uppercase;
 }
-.h-textsdf p{
+
+.h-textsdf p {
     color: var(--th-text-3);
 }
+
+.ce-card-box {
+    position: relative;
+}
+
+.ce-card-box .cec-text {
+    position: absolute;
+    bottom: 20%;
+    background: linear-gradient(90deg, rgba(34, 25, 25, 0.50) 0%, rgba(71, 46, 46, 0.34) 100%);
+    backdrop-filter: blur(7.699999809265137px);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.ce-card-box .cec-text h6 {
+    color: var(--th-text-3);
+    margin-bottom: 0;
+}
+
 /* ------------- College Experience Section End ------------- */
+
+/* 06.Explore Programm Section Start ------------------------------ */
+.explore-programm {
+    padding: 100px 0px;
+}
+
+.main-heading {
+    display: flex;
+    gap: 10px;
+    justify-content: stretch;
+    color: var(--th-bg-1);
+}
+
+.main-heading .mh-line {
+    width: 20px;
+    /* height: 68px !important; */
+    background-color: var(--th-bg-2);
+}
+
+.main-heading .mh-text h2 {
+    line-height: 1;
+}
+
+.expr-s-item {
+    padding: 30px;
+}
+
+.expr-s-item.primary-co {
+    background-color: var(--th-bg-1);
+}
+
+.expr-s-item.secondary-co {
+    background-color: var(--th-bg-2);
+}
+
+.expr-s-item h4 {
+    color: var(--th-text-3);
+}
+
+.expr-s-item img {
+    margin: 20px 0px;
+}
+
+.expr-s-item p a {
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: underline;
+    color: var(--th-text-3);
+}
+
+/* ------------- Explore Programm Section End ------------- */
+
+/* 07. Admission Year Section Start ------------------------------ */
+.admission-year {
+    padding: 80px 0px;
+    background-image: url(../image/admission-year.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.admission-year h2 {
+    color: var(--th-text-3);
+}
+
+.adye-left h3,
+.adye-left p {
+    color: var(--th-text-3);
+}
+
+.adye-right {
+    background: rgba(0, 0, 0, 0.49);
+    padding: 40px;
+    color: var(--th-text-3);
+}
+
+.adye-right {
+    background: rgba(0, 0, 0, 0.49);
+    padding: 40px;
+}
+
+.adye-right .form-control,
+.adye-right .form-select {
+    padding: 10px;
+    border-radius: 0px;
+}
+
+/* ------------- Admission Year Section End ------------- */
+
+/* 08. Placement Partner Section Start ------------------------------ */
+.placement-partner {
+    padding: 80px 0px;
+}
+
+/* .plpa-left{
+    max-width: 600px;
+    margin: auto;
+} */
+.plpa-left h4 {
+    color: var(--th-text-4);
+}
+
+.plpa-statis h1 {
+    color: var(--th-text-5);
+}
+
+.plpa-statis h6 {
+    color: var(--th-text-4);
+}
+
+.plpa-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--th-bg-1);
+    padding: 30px;
+}
+
+.plpa-box h5,
+.plpa-box p {
+    margin: 0;
+    color: var(--th-text-3);
+}
+
+.plpa-logo {
+    margin-top: 80px;
+    background-color: var(--th-bg-2);
+    padding: 10px 0px;
+}
+
+/* ------------- Placement Partner Section End ------------- */
+
+
+/* 09. Why Choose Us Section Start ------------------------------ */
+.why-choose-us {
+    padding: 80px 0px;
+}
+
+.why-choose-us .main-heading {
+    margin-bottom: 30px;
+}
+
+.whchus {
+    margin-top: 30px;
+}
+
+.whchus-box {
+    text-align: center;
+    padding: 50px;
+    height: 100%;
+}
+
+.whchus-box img {
+    max-width: 75px;
+    width: 100%;
+    margin: auto;
+}
+
+.whchus-box p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.whchus .row .col-md-3:nth-child(1),
+.whchus .row .col-md-3:nth-child(2),
+.whchus .row .col-md-3:nth-child(3) {
+    border-right: 1px solid var(--th-text-2);
+    border-bottom: 1px solid var(--th-text-2);
+}
+
+.whchus .row .col-md-3:nth-child(4) {
+    border-bottom: 1px solid var(--th-text-2);
+}
+
+.whchus .row .col-md-3:nth-child(5),
+.whchus .row .col-md-3:nth-child(6),
+.whchus .row .col-md-3:nth-child(7) {
+    border-right: 1px solid var(--th-text-2);
+
+}
+
+/* ------------- Why Choose Us Section End ------------- */
+
+
+/* 10.Students Life Section Start ------------------------------ */
+.student-life {
+    background-color: var(--th-bg-1);
+    color: var(--th-text-3);
+    padding: 80px 0px;
+}
+
+.student-life .main-heading h2 {
+    color: var(--th-text-3);
+}
+
+.stli-left .main-heading,
+.stli-left p {
+    margin-bottom: 25px;
+}
+
+.stli-left .stli-content {
+    margin-top: 50px;
+}
+
+.stli-box {
+    background-color: var(--th-bg-3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.stli-box h4 {
+    display: inline;
+    color: var(--th-bg-1);
+}
+
+.stli-box p {
+    display: inline;
+    color: var(--th-bg-1);
+}
+
+/* ------------- Students Life Section End ------------- */
+
+/* 11.Our Campus Section Start ------------------------------ */
+.our-campus {
+    height: 650px;
+    background-image: url(../image/our-campas.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ouca-head {
+    background-color: var(--th-bg-3);
+    padding: 50px;
+    height: 250px;
+}
+
+.ouca-head h2 {
+    color: var(--th-text-4);
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.ouca-box {
+    width: 100%;
+    max-width: 682px;
+    background-color: var(--th-bg-2);
+    padding: 80px 50px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ouca-inner {
+    max-width: 70%;
+    margin: auto;
+    color: var(--th-text-3);
+}
+
+.ouca-inner h3 {
+    color: var(--th-text-3);
+    text-align: center;
+}
+
+/* ------------- Our Campus Section End ------------- */
+
+
+
+/* ----------======================== About Us Page ========================---------- */
+
+
+/* 12.About Hero Section Start ------------------------------ */
+.abhe-left {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.abhe-left .main-heading {
+    margin-bottom: 30px;
+}
+
+/* ------------- About Hero Section End ------------- */
+
+/* 13.Our History Section Start ------------------------------ */
+.our-history{
+    padding: 80px 0px;
+    background-color: var(--th-bg-1);
+}
+.our-history h2{
+    color: var(--th-text-3);
+}
+.ouhi-box{
+    height: 100% !important;
+}
+.ouhi-slider{
+    position: relative;
+}
+.ouhi-slider::before{
+    content: ' ';
+    background-color: var(--th-text-3);
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+/* ------------- Our History Section End ------------- */
+
+/* 14.Top Management Section Start ------------------------------ */
+.top-management{
+    background-color: var(--th-bg-2);
+    padding: 80px 0px;
+}
+.top-management .mh-line{
+    background-color: var(--th-bg-1);
+}
+.top-management .mh-text h2{
+    color: var(--th-text-3);
+}
+.toma-box{
+    background-color: var(--th-bg-3);
+    padding: 25px 10px;
+    text-align: center;
+    height: 100%;
+    border-bottom: 6px solid var(--th-text-4);
+}
+.toma-box .toma-img{
+    margin-bottom: 40px;
+}
+.toma-box .toma-text h4{
+    font-weight: 400;
+    line-height: 1.2; 
+}
+.toma-box .toma-text p{
+   color: var(--th-text-2); 
+}
+/* ------------- Top Management Section End ------------- */
+
