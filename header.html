@@ -10,7 +10,7 @@
                         <ul class="m-0 p-0 d-flex list-unstyled">
                             <li class="nav-item" ><a class="nav-link" href="index.html">home</a></li>
                             <li class="nav-item" ><a class="nav-link" href="about-us.html">about us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="#">contact us</a></li>
+                            <li class="nav-item" ><a class="nav-link" href="contact.html">contact us</a></li>
                             <li class="nav-item" ><a class="nav-link" href="#">admission</a></li>
                         </ul>
                     </div>
@@ -34,7 +34,7 @@
                         <ul class="m-0 p-0 d-flex list-unstyled">
                             <li class="nav-item" ><a class="nav-link" href="index.html">home</a></li>
                             <li class="nav-item" ><a class="nav-link" href="about-us.html">about us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="#">contact us</a></li>
+                            <li class="nav-item" ><a class="nav-link" href="contact.html">contact us</a></li>
                             <li class="nav-item" ><a class="nav-link" href="#">admission</a></li>
                         </ul>
                     </div>
@@ -46,3 +46,14 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()>100){
+            $("#header").addClass('active');
+        }
+        else{
+            $("#header").removeClass('active');
+        }
+    })
+</script>

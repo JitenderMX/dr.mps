@@ -4,8 +4,9 @@
     --th-bg-1: #163A4F;
     --th-bg-2: #ED5A2E;
     --th-bg-3: #ffffff;
+    --th-bg-4: #F5F4F4;
     --th-text-1: #494949;
-    --th-text-2: #5A5A5A;
+    --th-text-2: #999999;
     --th-text-3: #ffffff;
     --th-text-4: #163A4F;
     --th-text-5: #ED5A2E;
@@ -79,6 +80,8 @@ a {
     border-radius: 12px;
     border: none;
     display: inline-block;
+    background-color: var(--th-bg-3);
+    color: #101010;
     font-family: var(--font-family);
     font-size: var(--th-fs-h6);
     font-weight: 700;
@@ -95,7 +98,8 @@ a {
     color: var(--th-text-3);
 }
 
-#about-page main {
+#about-page main,
+#contact-page main {
     margin-top: 112px;
 }
 
@@ -138,11 +142,17 @@ a {
 .header {
     padding: 15px 0px;
     background: linear-gradient(90deg, rgba(237, 237, 237, 0) 0%, rgba(111, 111, 111, 0) 100%);
+    transition: all .5s;
 }
 
 .header .navbar-brand {
     max-width: 220px;
     width: 100%;
+    transition: all .5s;
+}
+
+#header.active .navbar-brand {
+    max-width: 150px;
 }
 
 .header .nav-link {
@@ -152,8 +162,16 @@ a {
     color: var(--th-text-3);
 }
 
+#header.active .header.header-dark {
+    background-color: var(--th-bg-1);
+}
+
 .header.header-dark .nav-link {
     color: var(--th-text-3);
+}
+
+#header.active .header.header-light {
+    background-color: var(--th-bg-3);
 }
 
 .header.header-light .nav-link {
@@ -177,7 +195,13 @@ a {
 #home-page .header-light {
     display: none;
 }
+
 #about-page .header-dark {
+    display: none;
+}
+
+#about-page .header-dark,
+#contact-page .header-dark {
     display: none;
 }
 
@@ -320,11 +344,13 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
-.slider-arrow{
+
+.slider-arrow {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
+
 .slider-arrow .fa-solid {
     width: 50px;
     height: 50px;
@@ -335,6 +361,7 @@ a {
     color: var(--th-text-3);
     cursor: pointer;
 }
+
 .slider-arrow.light .fa-solid {
     width: 50px;
     height: 50px;
@@ -471,9 +498,23 @@ a {
 }
 
 .adye-right .form-control,
-.adye-right .form-select {
+.adye-right .form-select,
+.adye-right textarea {
+    width: 100%;
+    background-color: var(--th-bg-3);
     padding: 10px;
     border-radius: 0px;
+}
+
+.adye-right .form-control::placeholder,
+.adye-right .form-select::placeholder,
+.adye-right textarea::placeholder {
+    color: var(--th-text-1);
+    font-family: var(--font-family)3;
+    font-size: var(--th-fs-h6);
+    font-weight: 400;
+    line-height: 1.2;
+    /* 31.989px */
 }
 
 /* ------------- Admission Year Section End ------------- */
@@ -657,12 +698,75 @@ a {
 
 /* ------------- Our Campus Section End ------------- */
 
+/* 12.Footer Section Start ------------------------------ */
+.footer {
+    background-color: var(--th-bg-1);
+    padding: 50px 0px;
+}
+
+.footer .link-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer .link-list ul {
+    list-style: none;
+}
+
+.footer .link-list ul li {
+    margin-bottom: 15px;
+}
+
+.footer .link-list a {
+    color: var(--th-text-3);
+    font-size: var(--th-fs-h6);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .subscribe {
+    margin-top: 100px;
+    background-color: var(--th-bg-3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer .subscribe input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.footer .loc {
+    margin-top: 30px;
+}
+
+.footer .loc h6 {
+    color: var(--th-text-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer .loc a {
+    color: var(--th-text-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ------------- Footer Section End ------------- */
+
+
 
 
 /* ----------======================== About Us Page ========================---------- */
 
 
-/* 12.About Hero Section Start ------------------------------ */
+/* 13.About Hero Section Start ------------------------------ */
 .abhe-left {
     width: 100%;
     max-width: 600px;
@@ -675,21 +779,25 @@ a {
 
 /* ------------- About Hero Section End ------------- */
 
-/* 13.Our History Section Start ------------------------------ */
-.our-history{
+/* 14.Our History Section Start ------------------------------ */
+.our-history {
     padding: 80px 0px;
     background-color: var(--th-bg-1);
 }
-.our-history h2{
+
+.our-history h2 {
     color: var(--th-text-3);
 }
-.ouhi-box{
+
+.ouhi-box {
     height: 100% !important;
 }
-.ouhi-slider{
+
+.ouhi-slider {
     position: relative;
 }
-.ouhi-slider::before{
+
+.ouhi-slider::before {
     content: ' ';
     background-color: var(--th-text-3);
     width: 100%;
@@ -700,35 +808,123 @@ a {
     transform: translateY(-50%);
     left: 0px;
 }
+
 /* ------------- Our History Section End ------------- */
 
-/* 14.Top Management Section Start ------------------------------ */
-.top-management{
+/* 15.Top Management Section Start ------------------------------ */
+.top-management {
     background-color: var(--th-bg-2);
     padding: 80px 0px;
 }
-.top-management .mh-line{
+
+.top-management .mh-line {
     background-color: var(--th-bg-1);
 }
-.top-management .mh-text h2{
+
+.top-management .mh-text h2 {
     color: var(--th-text-3);
 }
-.toma-box{
+
+.toma-box {
     background-color: var(--th-bg-3);
     padding: 25px 10px;
     text-align: center;
     height: 100%;
     border-bottom: 6px solid var(--th-text-4);
 }
-.toma-box .toma-img{
+
+.toma-box .toma-img {
     margin-bottom: 40px;
 }
-.toma-box .toma-text h4{
+
+.toma-box .toma-text h4 {
     font-weight: 400;
-    line-height: 1.2; 
+    line-height: 1.2;
 }
-.toma-box .toma-text p{
-   color: var(--th-text-2); 
+
+.toma-box .toma-text p {
+    color: var(--th-text-2);
 }
+
 /* ------------- Top Management Section End ------------- */
 
+
+/* ----------======================== Contact Page ========================---------- */
+
+/* 16.Contact Hero Section Start ------------------------------ */
+.cohe-top {
+    background-color: var(--th-bg-1);
+    padding: 20px 0px;
+}
+
+.cohe-top h1 {
+    color: var(--th-text-3);
+}
+
+.cohe-bottom {
+    padding: 80px 0px;
+    background-color: var(--th-bg-4);
+}
+
+.cohe-left {
+    max-width: 600px;
+    margin: auto;
+    padding: 60px;
+    background-color: var(--th-bg-3);
+    position: relative;
+    left: 200px;
+}
+
+.cohe-le-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cohe-le-box .link-black a {
+    color: #000;
+}
+
+/* ------------- Contact Hero Section End ------------- */
+
+
+/* 17.FAQs Section Start ------------------------------ */
+.faqs {
+    padding: 80px 0px;
+    background: var(--th-bg-4);
+}
+
+.fa-head {
+    background-color: var(--th-bg-1);
+    color: var(--th-bg-3);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.faq-box {
+    background: var(--th-bg-3);
+    margin-top: 15px;
+}
+
+.faq-h {
+    padding: 10px 30px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-h p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.faq-text { 
+    display: none; 
+    padding: 20px;
+}
+.faq-text p{
+margin: 0;
+}
+
+/* ------------- FAQs Section End ------------- */
