@@ -115,23 +115,19 @@ a {
 
 /* Scroll Bar style start */
 
-/* ::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 10px;
+    transition: all .5s;
 }
 
-::-webkit-scrollbar:hover {
-    width: 50px;
+*::-webkit-scrollbar-track {
+    background-color: var(--th-bg-3);
 }
 
- ::-webkit-scrollbar-track {
-    Track
-    background-color: ;
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--th-bg-2);
 }
-
- ::-webkit-scrollbar-thumb {
-    Handle
-    background-color: ;
-} */
 
 
 /* Scroll Bar style End */
@@ -317,6 +313,59 @@ a {
     display: none;
 }
 
+.close-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--th-bg-1);
+    padding: 50px 0px;
+}
+
+.close-btn {
+    background-color: #061A2A;
+    padding: 20px;
+}
+
+.close-btn .text {
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h4);
+    color: var(--th-bg-3);
+    text-transform: uppercase;
+    line-height: 100%;
+}
+.close-btn .fa-solid{
+    font-size: var(--th-fs-h2);
+    color: var(--th-bg-3);
+    cursor: pointer;
+}
+.close-nav-container{
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+.close-nav{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0px;
+}
+.close-nav ul{
+   width: 100%;
+   text-align: center;
+}
+.close-nav ul li{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+.close-nav ul a{
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h3);
+    font-weight: 400;
+    color: var(--th-bg-3);    
+}
 /* ------------- Header Section End ------------- */
 
 
@@ -2057,9 +2106,11 @@ a {
 .mes-text.secondary .mess-quo {
     left: 10px;
 }
-.mes-text.secondary .mh-line{
+
+.mes-text.secondary .mh-line {
     background-color: var(--th-bg-1);
 }
+
 .mes-text .mess-quo {
     position: absolute;
     top: 10px;

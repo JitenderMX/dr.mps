@@ -1,17 +1,18 @@
 <div class="header header-dark">
     <div class="container-xxl">
         <div class="row justify-content-between align-items-center">
-            <div class="col-md-2">
-                <div class="navbar-brand"><a href="index.html"><img src="image/logo-dark.png" class="w-100" alt=""></a></div>
+            <div class="col-6 col-md-4 col-xxl-2">
+                <div class="navbar-brand"><a href="index.html"><img src="image/logo-dark.png" class="w-100" alt=""></a>
+                </div>
             </div>
-            <div class="col-md-5">
-                <div class="menu d-flex gap-5 justify-content-end align-items-center">
-                    <div class="nav-menu">
+            <div class="col-4 col-md-8 col-xl-5">
+                <div class="menu d-flex gap-md-3 gap-lg-5 justify-content-end align-items-center">
+                    <div class="nav-menu d-none d-md-block">
                         <ul class="m-0 p-0 d-flex list-unstyled">
-                            <li class="nav-item" ><a class="nav-link" href="index.html">home</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="about-us.html">about us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="contact.html">contact us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="admissions.html">admission</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">about us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admissions.html">admission</a></li>
                         </ul>
                     </div>
                     <div class="menu-btn">
@@ -25,17 +26,17 @@
 <div class="header header-light">
     <div class="container-xxl">
         <div class="row justify-content-between align-items-center">
-            <div class="col-md-2">
+            <div class="col-6 col-md-4 col-xxl-2">
                 <div class="navbar-brand"><a href="index.html"><img src="image/logo.png" class="w-100" alt=""></a></div>
             </div>
-            <div class="col-md-5">
-                <div class="menu d-flex gap-5 justify-content-end align-items-center">
-                    <div class="nav-menu">
+            <div class="col-4 col-md-8 col-xl-5">
+                <div class="menu d-flex gap-md-3 gap-lg-5 justify-content-end align-items-center">
+                    <div class="nav-menu d-none d-md-block">
                         <ul class="m-0 p-0 d-flex list-unstyled">
-                            <li class="nav-item" ><a class="nav-link" href="index.html">home</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="about-us.html">about us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="contact.html">contact us</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="admissions.html">admission</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">about us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admissions.html">admission</a></li>
                         </ul>
                     </div>
                     <div class="menu-btn">
@@ -46,14 +47,70 @@
         </div>
     </div>
 </div>
-
+<div class="close-menu d-none">
+    <div class="close-btn">
+       <div class="container-xxl">
+        <div id="close-menu" class="d-flex justify-content-end align-items-center gap-3">
+            <div class="text">Close menu</div>
+            <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+       </div>
+    </div>
+    <div class="close-nav-container">
+        <div class="close-nav">
+            <ul class="m-0 p-0 list-unstyled">
+                <li class="d-block d-md-none">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="d-block d-md-none">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="d-block d-md-none">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li class="d-block d-md-none">
+                    <a href="admissions.html">Admission</a>
+                </li>
+                <li>
+                    <a href="programmes.html">Programmes</a>
+                </li>
+                <li>
+                    <a href="academics.html">Academia</a>
+                </li>
+                <li>
+                    <a href="traning-n-placement.html">Training & Placements</a>
+                </li>
+                <li>
+                    <a href="life-at-mps.html">Life at Dr. MPS</a>
+                </li>
+                <li>
+                    <a href="campus.html">Our campus </a>
+                </li>
+                <li>
+                    <a href="awards-n-recognization.html">Awards & recognition</a>
+                </li>
+                <li>
+                    <a href="message.html">Message</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
 <script>
-    $(window).scroll(function(){
-        if($(window).scrollTop()>100){
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
             $("#header").addClass('active');
         }
-        else{
+        else {
             $("#header").removeClass('active');
         }
+    })
+    $('.menu-btn,#close-menu').click(function(){
+        $(".close-menu").toggleClass('d-none');
+        $("body").toggleClass('overflow-hidden');
     })
 </script>
