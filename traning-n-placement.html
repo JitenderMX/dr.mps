@@ -87,8 +87,11 @@
         <section class="tp-companie">
             <div class="container-xxl d-flex justify-content-center">
                 <div class="tpco-upper-box">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-5">
+                    <div class="row align-items-sm-center justify-content-sm-center">
+                        <div class="col-sm-6 col-md-5 order-sm-1">
+                            <div class="tpco-right"><img src="image/tp-companie.png" alt="" class="w-100"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 order-sm-0 mt-5 mt-sm-0">
                             <div class="tpco-left">
                                 <div class="main-heading">
                                     <div class="mh-line"></div>
@@ -115,9 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="tpco-right"><img src="image/tp-companie.png" alt="" class="w-100"></div>
-                        </div>
+                       
                     </div>
                 </div>
 
@@ -129,11 +130,11 @@
         <section class="corporate-communication">
             <div class="container-xxl">
                 <div class="row align-items-stretch">
-                    <div class="col-md-6 pe-0">
+                    <div class="col-md-6 pe-md-0">
                         <div class="coco-left"><img src="image/Corporate-communication-centre.jpg" class="w-100" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 p-0 coco-right-upper d-flex align-items-center">
+                    <div class="col-md-6 ps-md-0 coco-right-upper d-md-flex align-items-center">
                         <div class="coco-right">
                             <div class="main-heading">
                                 <div class="mh-line"></div>
@@ -164,7 +165,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-6 mt-3 col-lg-3">
                         <div class="plpr-box">
                             <h2>01</h2>
                             <h5>Registration and Application</h5>
@@ -172,7 +173,7 @@
                                 portal or designated registration forms.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 mt-3 col-lg-3">
                         <div class="plpr-box secondary">
                             <h2>02</h2>
                             <h5>Shortlisting</h5>
@@ -180,7 +181,7 @@
                                 profiles match the job requirements.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 mt-3 col-lg-3">
                         <div class="plpr-box">
                             <h2>03</h2>
                             <h5>Selection Rounds</h5>
@@ -188,7 +189,7 @@
                                 overall suitability for the job role.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-6 mt-3 col-lg-3">
                         <div class="plpr-box secondary">
                             <h2>04</h2>
                             <h5>Offer Letters and Placement</h5>
@@ -208,7 +209,7 @@
                 <h2>Industry Interaction Cell</h2>
                 <div class="row justify-content-center">
                     
-                    <div class="col-10 order-md-1">
+                    <div class="col-lg-10 order-lg-1">
                         <div class="inince-slider">
                             <div class="inince-box">
                                 <div class="inince-img"><img src="image/industry-1.jpg" alt="" class="w-100"></div>
@@ -256,13 +257,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-1 order-md-0">
-                        <div class="slider-arrow d-flex gap-3 align-items-center justify-content-center h-100">
+                    <div class="col-6 col-lg-1 order-lg-0">
+                        <div class="slider-arrow d-flex gap-lg-3 align-items-center justify-content-end justify-content-lg-center h-100">
                             <div id="inince-left"><i class="fa-solid fa-chevron-left"></i></div>
                         </div>
                     </div>
-                    <div class="col-lg-1 order-md-2">
-                        <div class="slider-arrow d-flex gap-3 align-items-center justify-content-center h-100">
+                    <div class="col-6 col-lg-1 order-lg-2">
+                        <div class="slider-arrow d-flex gap-lg-3 align-items-center justify-content-start justify-content-lg-center h-100">
                             <div id="inince-right"><i class="fa-solid fa-chevron-right"></i></div>
                         </div>
                     </div>
@@ -309,7 +310,26 @@
                 dots: false,
                 infinite: true,
                 speed: 300,
-                slidesToShow: 3
+                slidesToShow: 3,
+                responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
             });
 
             // Attach click events for navigation buttons

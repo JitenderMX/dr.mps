@@ -27,6 +27,10 @@ body {
     max-width: 1800px;
     padding: 0px 20px;
 }
+section{
+    overflow: hidden;
+
+}
 
 h1,
 h2,
@@ -99,18 +103,11 @@ a {
     color: var(--th-text-3);
 }
 
-#message-page main,
-#career-page main,
-#life-at-mps-page main,
-#awards-n-recognization-page main,
-#traning-n-placement-page main,
-#admission-page main,
-#about-page main,
-#campus-page main,
-#academics-page main,
-#programmes-page main,
-#contact-page main {
+main {
     margin-top: 112px;
+}
+#home-page main {
+    margin-top: 0px;
 }
 
 /* Scroll Bar style start */
@@ -884,7 +881,9 @@ a {
     font-weight: 400;
     line-height: normal;
 }
-
+.footer .logo{
+    max-width: 250px;
+}
 .footer .subscribe {
     margin-top: 100px;
     background-color: var(--th-bg-3);
@@ -929,6 +928,7 @@ a {
 .abhe-left {
     width: 100%;
     max-width: 600px;
+    padding: 50px;
     margin: auto;
 }
 
@@ -1019,14 +1019,17 @@ a {
 .cohe-top h1 {
     color: var(--th-text-3);
 }
-
+.cohe-top img{
+max-width: 100px;
+width: 100%;
+}
 .cohe-bottom {
     padding: 80px 0px;
     background-color: var(--th-bg-4);
 }
 
 .cohe-left {
-    max-width: 600px;
+    width: 600px;
     margin: auto;
     padding: 60px;
     background-color: var(--th-bg-3);
@@ -1819,14 +1822,20 @@ a {
 .fests.right .slick-dots {
     right: 10px;
 }
+.fe-box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 
+}
 #life-at-mps-page .slick-dots li.slick-active button:before {
     color: var(--th-bg-2);
     font-size: var(--th-fs-h6);
 }
 
 #life-at-mps-page .slick-dots li button:before {
-    color: rgb(185, 185, 185);
+    color: var(--th-bg-3);
+    opacity: 1;
     font-size: var(--th-fs-h6);
     transition: all .5s;
 }
@@ -2115,6 +2124,7 @@ a {
     position: absolute;
     top: 10px;
     max-width: 550px;
+    width: 80%;
 }
 
 .mes-text .mh-text h4:nth-child(1) {
