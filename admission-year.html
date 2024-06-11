@@ -27,18 +27,18 @@
                     <p>Admissions are open for this year's session.
                         If you would like an MPS Counsellor to contact you, please fill in your details below.
                     </p>
-                    <form action="" method="post">
+                    <form action="submit_form.php" method="post">
                         <div class="mb-4">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" name="name" placeholder="Name">
                         </div>
                         <div class="mb-4">
-                            <input type="email" class="form-control" placeholder="Email ID">
+                            <input type="email" class="form-control" name="email" placeholder="Email ID">
                         </div>
                         <div class="mb-4">
-                            <input type="tel" class="form-control" placeholder="Mobile No.">
+                            <input type="tel" class="form-control" name="phone" placeholder="Mobile No.">
                         </div>
                         <div class="mb-4">
-                            <select class="form-select">
+                            <select class="form-select" name="programme">
                                 <option selected>-- Select Programme --</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>

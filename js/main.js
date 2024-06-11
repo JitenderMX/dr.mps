@@ -8,3 +8,5 @@ $(".show-more").click(function(){
     $(this).toggleClass('active')
     $(this).next().slideToggle(500)
 })
+
+AOS.init();

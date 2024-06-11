@@ -185,6 +185,8 @@
         padding: 10px 0px;
     }
 
+    .current-openings,
+    .why-work,
     .photo-gallery,
     .tp-companie,
     .corporate-communication,
@@ -375,6 +377,14 @@
     }
     .seminars-container{
         padding: 10px;
+    }
+    .whwo-text {
+        position: absolute;
+        bottom: 20px;
+        padding: 20px;
+        background-color: var(--th-bg-3);
+        text-align: center;
+        border-top: 7px solid var(--th-text-5);
     }
 }
 

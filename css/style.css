@@ -1685,7 +1685,7 @@ width: 100%;
 
 /* 30.Placement Procedure Section Start ------------------------------ */
 .placement-procedure {
-    padding: 80px 0px;
+    padding: 50px 0px;
 }
 
 .placement-procedure h2 {
@@ -2044,7 +2044,7 @@ width: 100%;
 
 /* 37.Current Openings Section Start ------------------------------ */
 .current-openings {
-    padding: 80px 0px;
+    padding-bottom: 80px;
 }
 
 .current-openings h2 {
