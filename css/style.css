@@ -103,6 +103,32 @@ a {
     color: var(--th-text-3);
 }
 
+.show-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 1px 29.7px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .5s;
+}
+.show-more.active,
+.show-more:hover{
+    background-color: var(--th-bg-2);
+    color: var(--th-bg-3);
+}
+.show-more .text h3{
+    margin: 0;
+    line-height: 1;
+}
+.show-more .icon{
+    font-size: var(--th-fs-h3);
+    transition: all .5s;
+}
+.show-more.active .icon{
+    transform: rotate(-180deg);
+}
 main {
     margin-top: 112px;
 }

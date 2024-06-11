@@ -4,5 +4,7 @@ $("#footer").load("footer.html");
 $("#faq").load("faq.html");
 $("#admission-year").load("admission-year.html");
 
-
-
+$(".show-more").click(function(){
+    $(this).toggleClass('active')
+    $(this).next().slideToggle(500)
+})
