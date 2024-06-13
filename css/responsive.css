@@ -44,10 +44,10 @@
         --th-text-3: #ffffff;
         --th-text-4: #163A4F;
         --th-text-5: #ED5A2E;
-        --th-fs-h1: calc(64px*.8);
-        --th-fs-h2: calc(36px*.8);
-        --th-fs-h3: calc(32px*.8);
-        --th-fs-h4: calc(24px*.8);
+        --th-fs-h1: calc(56px*.8);
+        --th-fs-h2: calc(32px*.8);
+        --th-fs-h3: calc(28px*.8);
+        --th-fs-h4: calc(22px*.8);
         --th-fs-h6: 18px;
         --font-family: 'Open Sans Hebrew';
     }
@@ -76,12 +76,15 @@
 
 @media screen and (max-width: 992px) {
     :root {
-        --th-fs-h1: calc(64px*.75);
-        --th-fs-h2: calc(36px*.75);
-        --th-fs-h3: calc(32px*.75);
-        --th-fs-h4: calc(24px*.75);
+        --th-fs-h1: calc(56px*.75);
+        --th-fs-h2: calc(32px*.75);
+        --th-fs-h3: calc(28px*.75);
+        --th-fs-h4: calc(22px*.75);
         --th-fs-h5: calc(20px*.8);
         --th-fs-h6: calc(18px*.8);
+    }
+    .container-xxl {
+        padding: 0px 40px !important;
     }
 
     .abl-title {
@@ -153,11 +156,13 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --th-fs-h1: calc(64px*.65);
-        --th-fs-h2: calc(36px*.65);
-        --th-fs-h3: calc(32px*.65);
+        --th-fs-h1: calc(56px*.65);
+        --th-fs-h2: calc(32px*.65);
+        --th-fs-h3: calc(28px*.65);
     }
-
+    .th-btn {
+        padding: 10px 15px;
+    }
     .abl-p,
     .abl-title {
         text-align: center;
@@ -179,6 +184,7 @@
 
     .impa-sl-item {
         height: auto !important;
+        padding: 15px;
     }
 
     .ce-card-box .cec-text {
@@ -393,9 +399,12 @@
 
 @media screen and (max-width: 576px) {
     :root {
-        --th-fs-h1: calc(64px*.55);
-        --th-fs-h2: calc(36px*.55);
-        --th-fs-h3: calc(32px*.55);
+        --th-fs-h1: calc(56px*.55);
+        --th-fs-h2: calc(32px*.55);
+        --th-fs-h3: calc(28px*.55);
+    }
+    .container-xxl {
+        padding: 0px 20px !important;
     }
     .abl-title {
         font-size: calc(96px*.65);

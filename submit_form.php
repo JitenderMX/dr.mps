@@ -4,6 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $message = $_POST["message"];
+    $message = $_POST["programme"];
     
     // Validate input (you can add more validation if required)
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {

@@ -11,9 +11,9 @@
     --th-text-4: #163A4F;
     --th-text-5: #ED5A2E;
     --th-fs-h1: 64px;
-    --th-fs-h2: 36px;
-    --th-fs-h3: 32px;
-    --th-fs-h4: 24px;
+    --th-fs-h2: 32px;
+    --th-fs-h3: 28px;
+    --th-fs-h4: 22px;
     --th-fs-h5: 20px;
     --th-fs-h6: 18px;
     --font-family: 'Open Sans Hebrew';
@@ -25,7 +25,7 @@ body {
 
 .container-xxl {
     max-width: 1800px;
-    padding: 0px 20px;
+    padding: 0px 60px !important;
 }
 section{
     overflow: hidden;
@@ -613,7 +613,7 @@ main {
 }
 
 .main-heading .mh-line {
-    width: 20px;
+    width: 10px;
     /* height: 68px !important; */
     background-color: var(--th-bg-2);
 }
@@ -833,7 +833,14 @@ main {
     display: inline;
     color: var(--th-bg-1);
 }
-
+.stli-right{
+    height: 100%;
+}
+.stli-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* ------------- Students Life Section End ------------- */
 
 /* 11.Our Campus Section Start ------------------------------ */
@@ -1042,11 +1049,11 @@ main {
     padding: 20px 0px;
 }
 
-.cohe-top h1 {
+.cohe-top h2 {
     color: var(--th-text-3);
 }
 .cohe-top img{
-max-width: 100px;
+max-width: 65px;
 width: 100%;
 }
 .cohe-bottom {
