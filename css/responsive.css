@@ -83,6 +83,7 @@
         --th-fs-h5: calc(20px*.8);
         --th-fs-h6: calc(18px*.8);
     }
+
     .container-xxl {
         padding: 0px 40px !important;
     }
@@ -160,9 +161,11 @@
         --th-fs-h2: calc(32px*.65);
         --th-fs-h3: calc(28px*.65);
     }
+
     .th-btn {
         padding: 10px 15px;
     }
+
     .abl-p,
     .abl-title {
         text-align: center;
@@ -367,23 +370,28 @@
         padding: 15px;
         margin-bottom: 10px;
     }
+
     .coco-left img {
         height: 300px;
         object-fit: cover;
     }
-    .hh-icon .fas{
+
+    .hh-icon .fas {
         width: 50px;
         height: 50px;
         line-height: 50px;
         border-radius: 50%;
     }
+
     .hh-text h1:nth-child(1)::before,
-    .hh-text h1:nth-child(2)::before{
+    .hh-text h1:nth-child(2)::before {
         height: 0px;
     }
-    .seminars-container{
+
+    .seminars-container {
         padding: 10px;
     }
+
     .whwo-text {
         position: absolute;
         bottom: 20px;
@@ -403,9 +411,11 @@
         --th-fs-h2: calc(32px*.55);
         --th-fs-h3: calc(28px*.55);
     }
+
     .container-xxl {
         padding: 0px 20px !important;
     }
+
     .abl-title {
         font-size: calc(96px*.65);
     }
@@ -479,9 +489,19 @@
     .inince-text {
         padding: 20px;
     }
+    .fe-slider-1,
+    .fe-slider-2,
+    .fe-slider-3{
+        margin: 0   !important;
+    }
+    .fe-text-box{
+        padding: 20px 0px;
+    }
 
     .fe-text {
-        padding: 0px 30px;
+        padding: 0px 0px;
+        position: static;
+        transform: translateY(0%);
     }
 
     .fe-box img {
@@ -506,6 +526,7 @@
     .pdf-box {
         padding: 15px;
     }
+
     .coco-right {
         padding: 20px;
     }

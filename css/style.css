@@ -180,6 +180,7 @@ main {
 
 #campus-page .breadcrum {
     background-image: url(../image/campus-breadcru.jpg);
+    background-position: left top;
     padding-bottom: 100px;
 }
 
