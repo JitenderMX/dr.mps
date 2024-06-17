@@ -372,7 +372,7 @@ main {
     max-width: 500px;
     width: 100%;
     margin: auto;
-    padding: 100px 0px;
+    padding: 30px 0px;
 }
 .close-nav ul{
    width: 100%;
@@ -388,6 +388,10 @@ main {
     font-size: var(--th-fs-h3);
     font-weight: 400;
     color: var(--th-bg-3);    
+    transition: all .5s;
+}
+.close-nav ul a:hover{
+    color: var(--th-bg-2);
 }
 /* ------------- Header Section End ------------- */
 
@@ -1737,7 +1741,10 @@ width: 100%;
 
 /* 31.Industry Interaction Cell Section Start ------------------------------ */
 .industry-interaction-cell {
-    padding: 80px 0px;
+    padding-top: 80px;
+}
+.industry-interaction-cell.industry-interaction-cell-3{
+    padding-bottom: 80px;
 }
 
 .industry-interaction-cell h2 {
