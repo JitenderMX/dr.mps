@@ -27,7 +27,8 @@ body {
     max-width: 1800px;
     padding: 0px 60px !important;
 }
-section{
+
+section {
     overflow: hidden;
 
 }
@@ -40,7 +41,7 @@ h5,
 h6 {
     font-family: var(--font-family);
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 1.3;
     font-weight: bold;
 }
 
@@ -103,7 +104,7 @@ a {
     color: var(--th-text-3);
 }
 
-.show-more{
+.show-more {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,25 +114,31 @@ a {
     cursor: pointer;
     transition: all .5s;
 }
+
 .show-more.active,
-.show-more:hover{
+.show-more:hover {
     background-color: var(--th-bg-2);
     color: var(--th-bg-3);
 }
-.show-more .text h3{
+
+.show-more .text h3 {
     margin: 0;
     line-height: 1;
 }
-.show-more .icon{
+
+.show-more .icon {
     font-size: var(--th-fs-h3);
     transition: all .5s;
 }
-.show-more.active .icon{
+
+.show-more.active .icon {
     transform: rotate(-180deg);
 }
+
 main {
     margin-top: 112px;
 }
+
 #home-page main {
     margin-top: 0px;
 }
@@ -198,13 +205,13 @@ main {
 }
 
 #life-at-mps-page .breadcrum {
-    background:  linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/life-breadcrum.jpg);
+    background: linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/life-breadcrum.jpg);
     background-position: left top;
     background-size: cover;
 }
 
 #traning-n-placement-page .breadcrum {
-    background-image:  linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%),  url(../image/traning-n-placement.jpg);
+    background-image: linear-gradient(90deg, #0E2939 0%, rgba(24, 55, 79, 0.45) 100%), url(../image/traning-n-placement.jpg);
 }
 
 .breadcrum p {
@@ -362,41 +369,49 @@ main {
     text-transform: uppercase;
     line-height: 100%;
 }
-.close-btn .fa-solid{
+
+.close-btn .fa-solid {
     font-size: var(--th-fs-h2);
     color: var(--th-bg-3);
     cursor: pointer;
 }
-.close-nav-container{
+
+.close-nav-container {
     height: 100vh;
     overflow-y: scroll;
     padding-bottom: 100px;
 }
-.close-nav{
+
+.close-nav {
     max-width: 500px;
     width: 100%;
     margin: auto;
     padding: 30px 0px;
 }
-.close-nav ul{
-   width: 100%;
-   text-align: center;
+
+.close-nav ul {
+    width: 100%;
+    text-align: center;
 }
-.close-nav ul li{
+
+.close-nav ul li {
     padding-top: 25px;
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.21);
 }
-.close-nav ul a{
+
+.close-nav ul a {
     font-family: var(--font-family);
     font-size: var(--th-fs-h3);
     font-weight: 400;
-    color: var(--th-bg-3);    
+    color: var(--th-bg-3);
     transition: all .5s;
 }
-.close-nav ul a:hover{
+
+.close-nav ul a:hover {
     color: var(--th-bg-2);
 }
+
 /* ------------- Header Section End ------------- */
 
 
@@ -626,9 +641,6 @@ main {
     background-color: var(--th-bg-2);
 }
 
-.main-heading .mh-text h2 {
-    line-height: 1;
-}
 
 .expr-s-item {
     padding: 30px;
@@ -662,7 +674,7 @@ main {
 /* 07. Admission Year Section Start ------------------------------ */
 .admission-year {
     padding: 80px 0px;
-    background-image:linear-gradient(180deg, #163A4F 0.01%, rgba(21, 62, 95, 0.5) 100%), url(../image/admission-year.jpg);
+    background-image: linear-gradient(180deg, #163A4F 0.01%, rgba(21, 62, 95, 0.8) 100%), url(../image/admission-year.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -678,14 +690,15 @@ main {
 
 .adye-right {
     background: rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(7.7px);
     padding: 40px;
     color: var(--th-text-3);
 }
 
-.adye-right {
+/* .adye-right {
     background: rgba(0, 0, 0, 0.49);
     padding: 40px;
-}
+} */
 
 .adye-right .form-control,
 .adye-right .form-select,
@@ -841,14 +854,17 @@ main {
     display: inline;
     color: var(--th-bg-1);
 }
-.stli-right{
+
+.stli-right {
     height: 100%;
 }
-.stli-right img{
+
+.stli-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* ------------- Students Life Section End ------------- */
 
 /* 11.Our Campus Section Start ------------------------------ */
@@ -922,9 +938,11 @@ main {
     font-weight: 400;
     line-height: normal;
 }
-.footer .logo{
+
+.footer .logo {
     max-width: 250px;
 }
+
 .footer .subscribe {
     margin-top: 100px;
     background-color: var(--th-bg-3);
@@ -1060,10 +1078,12 @@ main {
 .cohe-top h2 {
     color: var(--th-text-3);
 }
-.cohe-top img{
-max-width: 65px;
-width: 100%;
+
+.cohe-top img {
+    max-width: 65px;
+    width: 100%;
 }
+
 .cohe-bottom {
     padding: 80px 0px;
     background-color: var(--th-bg-4);
@@ -1747,7 +1767,8 @@ width: 100%;
 .industry-interaction-cell {
     padding-top: 80px;
 }
-.industry-interaction-cell.industry-interaction-cell-3{
+
+.industry-interaction-cell.industry-interaction-cell-3 {
     padding-bottom: 80px;
 }
 
@@ -1866,12 +1887,14 @@ width: 100%;
 .fests.right .slick-dots {
     right: 10px;
 }
-.fe-box img{
+
+.fe-box img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 
 }
+
 #life-at-mps-page .slick-dots li.slick-active button:before {
     color: var(--th-bg-2);
     font-size: var(--th-fs-h6);
