@@ -2440,6 +2440,7 @@ background-color: var(--th-bg-1);
 }
 #landing-page .awtoco-box{
    height: 100%;
+   min-height: 410px;
 }
 #landing-page .awtoco-img{
     width: 100px;
@@ -2447,4 +2448,10 @@ background-color: var(--th-bg-1);
     border: 50%;
     margin: auto;
 
+}
+
+#landing-page  .industry-interaction-cell .slider-arrow .fa-solid {
+    background-color: var(--th-bg-2);
+    color: var(--th-bg-3);
+    border: 2px solid var(--th-bg-2);
 }
