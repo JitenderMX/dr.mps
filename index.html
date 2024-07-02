@@ -440,6 +440,43 @@
         </section>
 
 
+         <!-- Activities Section Start -->
+         <section class="activities industry-interaction-cell" data-aos="fade-up" data-aos-duration="800">
+            <div class="container-xxl">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="main-heading">
+                        <div class="mh-line"></div>
+                        <div class="mh-text">
+                            <h2 class="m-0">
+                                Life at campus
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 order-lg-1">
+                        <div class="act-slider">
+                            <div class="p-lg-4 my-md-4 my-lg-0"><img src="image/landing/life-1.png" alt="" class="w-100"></div>
+                            <div class="p-lg-4 my-md-4 my-lg-0"><img src="image/landing/life-1.png" alt="" class="w-100"></div>
+                            <div class="p-lg-4 my-md-4 my-lg-0"><img src="image/landing/life-1.png" alt="" class="w-100"></div>
+                            <div class="p-lg-4 my-md-4 my-lg-0"><img src="image/landing/life-1.png" alt="" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-1 order-lg-0 mt-3 mt-lg-0">
+                        <div class="slider-arrow  d-flex gap-3 align-items-center justify-content-end justify-content-lg-center h-100">
+                            <div id="act-left"><i class="fa-solid fa-chevron-left"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-1 order-lg-2 mt-3 mt-lg-0">
+                        <div class="slider-arrow  d-flex gap-3 align-items-center justify-content-start justify-content-lg-center h-100">
+                            <div id="act-right"><i class="fa-solid fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Activities Section End -->
+
 
     </main>
     <!-- Main Section End -->
@@ -470,6 +507,22 @@
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
     <script>
+        // Initialize all sliders
+        $('.act-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1
+        });
+
+        // Attach click events for navigation buttons
+        $('#act-left .fa-solid').click(function () {
+            $('.act-slider').slick('slickPrev');
+        });
+        $('#act-right .fa-solid').click(function () {
+            $('.act-slider').slick('slickNext');
+        });
+        
         $(".brand-slider").slick({
             dots: false,
             arrows: false,
