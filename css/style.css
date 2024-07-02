@@ -2205,3 +2205,246 @@ main {
 }
 
 /* ------------- Message Section End ------------- */
+
+
+/* ----------======================== Landing Page ========================---------- */
+
+/* 39.header Section Start ------------------------------ */
+#landing-page #headers {
+    position: relative;
+    background-color: var(--th-bg-3);
+}
+#landing-page main {
+   margin-top: 0px;
+}
+#landing-page .ab-left {
+   padding: 0px;
+}
+
+#landing-page #headers .hl-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#landing-page #headers .hl-left {
+    max-width: 150px;
+    width: 100%;
+}
+
+#landing-page #headers .hl-left img {
+    width: 100%;
+}
+
+#landing-page #headers .hl-right ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#landing-page #headers .hl-right ul li a {
+    color: #000;
+    font-family: var(--font-family);
+    font-size: var(--th-fs-h5);
+    font-weight: 400;
+    line-height: 27.24px;
+}
+
+/* ------------- header Section End ------------- */
+
+/* 40.Hero Landing Section Start ------------------------------ */
+.hero-landing {
+    padding: 100px 0px;
+    background: url(../image/landing/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hela-left {
+    color: var(--th-bg-3);
+}
+
+.hela-left h1:nth-child(1) {
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.hela-left h1:nth-child(2) {
+    font-weight: 900;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--th-bg-2);
+    display: inline-block;
+}
+
+.hela-left p {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.hela-left a {
+    display: inline-block;
+}
+
+.hela-right {
+    background-color: var(--th-bg-2);
+    padding: 50px;
+}
+
+.hela-text {
+    width: 80%;
+    text-align: center;
+    color: var(--th-bg-3);
+    margin: auto;
+}
+.hela-btn {
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+}
+.hela-btn .th-btn.light {
+    border: 1px solid var(--th-bg-1);
+}
+
+.hela-btn .th-btn.dark {
+    border: 1px solid var(--th-bg-4);
+}
+.landing-num{
+    padding: 50px 0px;
+}
+
+/* ------------- Hero Landing Section End ------------- */
+
+/* 41. Landing Courses Section Start ------------- */
+.landing-courses{
+    padding: 80px 0px;
+    background: url(../image/landing/course-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.laco-outer{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid var(--th-bg-3);
+    padding: 20px;
+}
+.laco-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--th-bg-3);
+    border: 8px solid var(--th-bg-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.laco-inner h3{
+    text-transform: uppercase;
+}
+.laco-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.laco-box .laco-item{
+    padding: 4px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--th-bg-3);
+}
+.laco-box .laco-item .laco-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.laco-box .laco-item .laco-num{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: var(--th-bg-3);
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: var(--th-fs-h4);
+    color: var(--th-bg-1);
+}
+.laco-box .laco-item .laco-text h4,
+.laco-box .laco-item .laco-text h6{
+    margin: 0;
+    letter-spacing: .5px;
+    display: inline-block;
+}
+.laco-box .laco-item:nth-child(odd){
+background-color: var(--th-bg-2);
+}
+.laco-box .laco-item:nth-child(even){
+background-color: var(--th-bg-1);
+}
+
+/* ------------- Landing Courses Section End ------------- */
+
+
+.reserv-seat{
+    padding: 80px 0px;
+    background: url(../image/landing/reserv-seat.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reserv-seat .rese-box{
+    border-top:10px solid var(--th-bg-2) ;
+    padding: 50px 0px;
+    background-color: var(--th-bg-3);
+}
+.reserv-seat .hela-right{
+    max-width: 500px;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--th-bg-3);
+}
+.reserv-seat .hela-right .hela-text{
+    color: var(--th-bg-1);
+    width: 100%;
+}
+.re-left{
+    background-color: var(--th-bg-2);
+    padding: 50px;
+    position: relative;
+}
+.re-left::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--th-bg-2);
+    transform: skew(20deg) translateX(50px);
+}
+.re-left h2{
+   color: var(--th-bg-3);
+}
+#landing-page .awtoco-box{
+   height: 100%;
+}
+#landing-page .awtoco-img{
+    width: 100px;
+    height: 100px;
+    border: 50%;
+    margin: auto;
+
+}

@@ -400,6 +400,9 @@
         text-align: center;
         border-top: 7px solid var(--th-text-5);
     }
+    .reserv-seat{
+        padding: 80px;
+    }
 }
 
 
@@ -411,7 +414,6 @@
         --th-fs-h2: calc(32px*.55);
         --th-fs-h3: calc(28px*.55);
     }
-
     .container-xxl {
         padding: 0px 20px !important;
     }
@@ -529,5 +531,41 @@
 
     .coco-right {
         padding: 20px;
+    }
+    .hela-right {
+        padding: 30px;
+    }
+    .laco-outer{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        padding: 15px;
+    }
+    .laco-box .laco-item .laco-num{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .reserv-seat{
+        padding: 40px 20px;
+    }
+    .laco-item{
+        padding: 10px;
+        text-align: center;
+    }
+    .laco-num{
+        display: none;
+    }
+    .laco-text{
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .re-left{
+        padding: 20px;
+        text-align: center;
+    }
+    .re-left::after{
+        width: 0px;
     }
 }
