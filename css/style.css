@@ -150,9 +150,20 @@ main {
     transition: all .5s;
 }
 
+/* For WebKit browsers */
 *::-webkit-scrollbar-track {
-    background-color: var(--th-bg-3);
+    background-color: transparent !important;
 }
+
+/* For other browsers (may not be supported in all) */
+*::-moz-scrollbar-track {
+    background-color: transparent !important;
+}
+
+*::-ms-scrollbar-track {
+    background-color: transparent !important;
+}
+
 
 *::-webkit-scrollbar-thumb {
     border-radius: 10px;

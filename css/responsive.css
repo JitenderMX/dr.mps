@@ -541,8 +541,8 @@
         padding: 30px;
     }
     .laco-outer{
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
         margin: auto;
         padding: 15px;
     }
@@ -580,5 +580,14 @@
     .header-foot .hefo-box img{
         width: 40px;
         margin: auto;
+    }
+    #landing-page .abl-title {
+        font-size: calc(96px*.5);
+    }
+    #landing-page .abl-p h4{
+        font-size: var(--th-fs-h6);
+    }
+    .landing-courses {
+        padding: 50px 0px;
     }
 }
