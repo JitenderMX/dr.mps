@@ -83,7 +83,9 @@
         --th-fs-h5: calc(20px*.8);
         --th-fs-h6: calc(18px*.8);
     }
-
+    #landing-page #headers .hl-right ul{
+        gap: 20px;
+    }
     .container-xxl {
         padding: 0px 40px !important;
     }
@@ -403,6 +405,9 @@
     .reserv-seat{
         padding: 80px;
     }
+    footer{
+        margin-bottom: 100px;
+    }
 }
 
 
@@ -567,5 +572,13 @@
     }
     .re-left::after{
         width: 0px;
+    }
+    .header-foot {
+      gap: 5px;
+        padding: 15px;
+    }
+    .header-foot .hefo-box img{
+        width: 40px;
+        margin: auto;
     }
 }

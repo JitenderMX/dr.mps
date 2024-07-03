@@ -2455,3 +2455,78 @@ background-color: var(--th-bg-1);
     color: var(--th-bg-3);
     border: 2px solid var(--th-bg-2);
 }
+
+#landing-page .slick-dots li.slick-active button:before {
+    color: var(--th-bg-2);
+    font-size: var(--th-fs-h6);
+}
+
+#landing-page .slick-dots li button:before {
+    color: rgb(210, 210, 210);
+    font-size: var(--th-fs-h6);
+    transition: all .5s;
+}
+
+#landing-page .slick-dots li:hover button:before {
+    color: var(--th-bg-2);
+}
+
+.landing-faq{
+    padding: 50px 0px;
+}
+.landing-faq .faq-box{
+    background-color: transparent !important;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 30px;
+}
+.landing-faq .faq-h{
+   border: none;
+   padding: 0px;
+   align-items: center;
+}
+.landing-faq .faq-h p{
+    font-weight: 600;
+}
+.landing-faq .faq-text{
+   max-width: 80%;
+   color: rgba(111, 108, 144, 1);
+   padding: 10px 0 0 0;
+}
+.landing-faq .fa-solid{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+border-radius: 50%;
+}
+.landing-faq .slick-dots{
+ margin-top: 30px !important;
+}
+.header-foot {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--th-bg-3);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.header-foot .hefo-box{
+    text-align: center;
+}
+.header-foot .hefo-box p{
+    color: var(--th-text-1);
+    margin: 10px 0 0 0;
+}
+.header-foot .hefo-box img{
+    width: 50px;
+    margin: auto;
+}
+#footers .footer .logo{
+    margin: auto;
+}

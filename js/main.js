@@ -10,3 +10,10 @@ $(".show-more").click(function(){
 })
 
 AOS.init();
+
+    $('.faq-h').click(function () {
+        // Toggle the display of the FAQ answer
+        $(this).next('.faq-text').slideToggle(300);
+        // Toggle the arrow icon direction
+        $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+    });

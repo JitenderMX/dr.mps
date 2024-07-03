@@ -4,7 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $message = $_POST["message"];
-    $message = $_POST["programme"];
+    $programme = $_POST["programme"];
+    $year = $_POST["year"];
     
     // Validate input (you can add more validation if required)
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
@@ -13,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "jitenderjkr19@gmail.com";
+    $to = "jitender.work.mediax@gmail.com";
     
     // Set the email subject
     $subject = "New Form Submission";
@@ -23,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Email: $email\n";
     $email_content .= "Phone: $phone\n";
     $email_content .= "Message:\n$message";
+    $email_content .= "I'm interested in:\n $programme";
+    $email_content .= "Year of Passing:\n $year";
     
     // Set the email headers
     $headers = "From: $name <$email>\r\n";
