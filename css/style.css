@@ -150,20 +150,9 @@ main {
     transition: all .5s;
 }
 
-/* For WebKit browsers */
-*::-webkit-scrollbar-track {
-    background-color: transparent !important;
-}
-
-/* For other browsers (may not be supported in all) */
-*::-moz-scrollbar-track {
-    background-color: transparent !important;
-}
-
-*::-ms-scrollbar-track {
-    background-color: transparent !important;
-}
-
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -2446,8 +2435,10 @@ background-color: var(--th-bg-1);
     background-color: var(--th-bg-2);
     transform: skew(20deg) translateX(50px);
 }
-.re-left h2{
+#landing-page .re-left h2{
    color: var(--th-bg-3);
+   position: relative;
+   z-index: 10;
 }
 #landing-page .awtoco-box{
    height: 100%;
