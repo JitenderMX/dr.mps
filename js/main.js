@@ -13,6 +13,7 @@ AOS.init();
 
     $('.faq-h').click(function () {
         // Toggle the display of the FAQ answer
+        $('.faq-h').next('.faq-text').slideUp(300);
         $(this).next('.faq-text').slideToggle(300);
         // Toggle the arrow icon direction
         $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');

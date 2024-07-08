@@ -87,7 +87,7 @@
         <section class="hero-landing">
             <div class="container-xxl">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-xl-7">
                         <div class="hela-left">
                             <h1>Explore limitless possibilities </h1>
                             <h1>Dr. MPS Group of Institutions </h1>
@@ -96,16 +96,16 @@
                             <a href="#reserv-seat" class="th-btn dark">Reserve Your Seat</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="col-xl-4 mt-5 mt-xl-0">
                         <div class="hela-right">
                             <div class="hela-text">
-                                <h3>Enquiry Form</h3>
+                                <h3>ENQUIRY FORM</h3>
                                 <p>Admissions are open for this year's session.
                                     If you would like an MPS Counsellor to contact you, please fill in your details
                                     below.</p>
                             </div>
 
-                            <form action="submit_form.php" method="post" class="mt-4">
+                            <form name="sheet-form" method="post" class="mt-4">
                                 <div class="mb-3">
                                     <input type="text" class="form-control" name="name" placeholder="Full Name">
                                 </div>
@@ -131,10 +131,10 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control" name="year" placeholder="Year of Passing">
+                                    <input type="text" class="form-control" name="year" placeholder="Year of Passing">
                                 </div>
                                 <div class="hela-btn d-flex justify-content-between align-items-center">
-                                    <button type="submit" class="th-btn light">Get a call back</button>
+                                    <button type="submit" name="submit" class="th-btn light">Get a call back</button>
                                     <a href="#" class="th-btn dark">Download brochure</a>
                                 </div>
                             </form>
@@ -208,7 +208,7 @@
                                 </div>
                                 <div class="laco-text">
                                     <h4>MBA</h4>
-                                    <h6>(Master of Business Administration)</h6>
+                                    <h6>(Master Of Business Administration)</h6>
                                 </div>
                             </div>
                             <div class="laco-item">
@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="laco-text">
                                     <h4>BBA</h4>
-                                    <h6>(Bachelor of Business Administration)</h6>
+                                    <h6>(Bachelor Of Business Administration)</h6>
                                 </div>
                             </div>
                             <div class="laco-item">
@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="laco-text">
                                     <h4>B.COM</h4>
-                                    <h6>(Bachelor of Commerce)</h6>
+                                    <h6>(Bachelor Of Commerce)</h6>
                                 </div>
                             </div>
                             <div class="laco-item">
@@ -235,7 +235,7 @@
                                 </div>
                                 <div class="laco-text">
                                     <h4>B.SC.</h4>
-                                    <h6>(BACHELOR OF SCIENCE)</h6>
+                                    <h6>(Bachelor Of Science)</h6>
                                 </div>
                             </div>
                             <div class="laco-item">
@@ -244,7 +244,7 @@
                                 </div>
                                 <div class="laco-text">
                                     <h4>BBA</h4>
-                                    <h6>(BACHELOR OF BUSINESS ADMINISTRATION) IN LOGISTICS</h6>
+                                    <h6>(Bachelor Of Business Administration) In Logistics</h6>
                                 </div>
                             </div>
                         </div>
@@ -256,42 +256,30 @@
                                     <div class="laco-num">06.</div>
                                 </div>
                                 <div class="laco-text">
-                                    <h4>BIOTECHNOLOGY</h4>
+                                    <h4>B.Sc. (Hospitality & Tourism)</h4>
                                 </div>
                             </div>
-
                             <div class="laco-item">
                                 <div class="">
                                     <div class="laco-num">07.</div>
                                 </div>
                                 <div class="laco-text">
                                     <h4>M.SC. BT</h4>
-                                    <h6>(M.SC. BIOTECHNOLOGY)</h6>
+                                    <h6>(M.Sc. Biotechnology)</h6>
                                 </div>
                             </div>
-
                             <div class="laco-item">
                                 <div class="">
                                     <div class="laco-num">08.</div>
                                 </div>
                                 <div class="laco-text">
                                     <h4>BCA</h4>
-                                    <h6>(BACHELOR OF COMPUTER APPLICATION)</h6>
+                                    <h6>(Bachelor Of Computer Application)</h6>
                                 </div>
                             </div>
-
                             <div class="laco-item">
                                 <div class="">
-                                    <div class="laco-num">09.</div>
-                                </div>
-                                <div class="laco-text">
-                                    <h4>PGDMA / GDMA</h4>
-                                </div>
-                            </div>
-
-                            <div class="laco-item">
-                                <div class="">
-                                    <div class="laco-num">10.</div>
+                                    <div class="laco-num">9.</div>
                                 </div>
                                 <div class="laco-text">
                                     <h4>B.SC. BT</h4>
@@ -312,7 +300,7 @@
                 <div class="row align-items-center">
                     <div class="col-sm-4 col-xl-3">
                         <div class="re-left">
-                            <h2 class="m-0">Some of Our <br class="d-none d-lg-block"> esteemed Recruiters </h2>
+                            <h2 class="m-0">Some of our <br class="d-none d-lg-block"> esteemed recruiters </h2>
                         </div>
                     </div>
                     <div class="col-sm-8 col-xl-9">
@@ -352,7 +340,7 @@
                                         below.</p>
                                 </div>
 
-                                <form action="submit_form.php" method="post" class="mt-4">
+                                <form id="sheet-form" class="mt-4">
                                     <div class="mb-3">
                                         <input type="text" class="form-control" name="name" placeholder="Full Name">
                                     </div>
@@ -417,9 +405,7 @@
                                         <h4 class="mb-2"> Himanshi Gogiya</h4>
                                         <h5 class="fw-light">M.Sc. Biotech</h5>
                                         <p>Dr. MPS College is a synonym for the temple of knowledge. The result-oriented
-                                            training enables us to prepare for the corporate world. I
-                                            developed my skills and now work with Evelyn Learning Systems
-                                            as a Subject Matter Expert.
+                                            training enables us to prepare for the corporate world.
                                         </p>
                                     </div>
                                 </div>
@@ -433,7 +419,7 @@
                                         <h5 class="fw-light">B.COM</h5>
                                         <p>I am privileged to be a student of Dr. MPS College. Because it's a place
                                             where we, the youngsters, get the environment of quality education in every
-                                            aspect. So, I am highly delighted and proud to be a part of this college.
+                                            aspect.
                                         </p>
                                     </div>
                                 </div>
@@ -453,7 +439,7 @@
                             </div>
                             <div class="px-2 p-md-4">
                                 <div class="awtoco-box">
-                                    <div class="awtoco-img"><img src="image/landing/user-1.png" alt="" class="w-100">
+                                    <div class="awtoco-img"><img src="image/landing/user-4.png" alt="" class="w-100">
                                     </div>
                                     <div class="awtoco-text">
                                         <h4 class="mb-2"> Akrati Singh</h4>
@@ -472,9 +458,7 @@
                                         <h4 class="mb-2"> Himanshi Gogiya</h4>
                                         <h5 class="fw-light">M.Sc. Biotech</h5>
                                         <p>Dr. MPS College is a synonym for the temple of knowledge. The result-oriented
-                                            training enables us to prepare for the corporate world. I
-                                            developed my skills and now work with Evelyn Learning Systems
-                                            as a Subject Matter Expert.
+                                            training enables us to prepare for the corporate world.
                                         </p>
                                     </div>
                                 </div>
@@ -488,7 +472,7 @@
                                         <h5 class="fw-light">B.COM</h5>
                                         <p>I am privileged to be a student of Dr. MPS College. Because it's a place
                                             where we, the youngsters, get the environment of quality education in every
-                                            aspect. So, I am highly delighted and proud to be a part of this college.
+                                            aspect.
                                         </p>
                                     </div>
                                 </div>
@@ -508,7 +492,7 @@
                             </div>
                             <div class="px-2 p-md-4">
                                 <div class="awtoco-box">
-                                    <div class="awtoco-img"><img src="image/landing/user-1.png" alt="" class="w-100">
+                                    <div class="awtoco-img"><img src="image/landing/user-4.png" alt="" class="w-100">
                                     </div>
                                     <div class="awtoco-text">
                                         <h4 class="mb-2"> Akrati Singh</h4>
@@ -638,7 +622,7 @@
                             <div class="faq-box">
                                 <div class="faq-h">
                                     <div class="">
-                                        <p>1. Why should I choose “MPS” as my dream destination?</p>
+                                        <p>Why should I choose “MPS” as my dream destination?</p>
                                     </div>
                                     <div class="">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -655,7 +639,7 @@
                             <div class="faq-box">
                                 <div class="faq-h">
                                     <div class="">
-                                        <p>2. How can I clear my doubts in case of any query?</p>
+                                        <p>How can I clear my doubts in case of any query?</p>
                                     </div>
                                     <div class="">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -677,7 +661,7 @@
                             <div class="faq-box">
                                 <div class="faq-h">
                                     <div class="">
-                                        <p>3. What kind of placement support does the college provide?</p>
+                                        <p>What kind of placement support does the college provide?</p>
                                     </div>
                                     <div class="">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -696,7 +680,7 @@
                             <div class="faq-box">
                                 <div class="faq-h">
                                     <div class="">
-                                        <p>4. What are the eligibility criteria for applying to MPS?</p>
+                                        <p>What are the eligibility criteria for applying to MPS?</p>
                                     </div>
                                     <div class="">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -728,7 +712,7 @@
                             <div class="faq-box">
                                 <div class="faq-h">
                                     <div class="">
-                                        <p>5. What is the mode of payment of fees? Is there any provision for
+                                        <p>What is the mode of payment of fees? Is there any provision for
                                             scholarships/concessions?
                                         </p>
                                     </div>
@@ -750,21 +734,6 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="faq-box">
-                                <div class="faq-h">
-                                    <div class="">
-                                        <p>6. what programes does the college offer?</p>
-                                    </div>
-                                    <div class="">
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </div>
-                                </div>
-                                <div class="faq-text">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, libero? Alias
-                                        deleniti impedit delectus facere iste incidunt dicta, rem inventore id
-                                        voluptatem rerum nisi laboriosam illo animi tempora nostrum excepturi.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -784,7 +753,7 @@
         <div class="footer">
             <div class="container-xxl">
                 <div class="row justify-content-between">
-                    <div class="col-lg-2 col-sm-6 text-center">
+                    <div class="col-lg-3 col-sm-6 text-center">
                         <div class="logo">
                             <a href="index.html">
                                 <img src="image/landing/logo-landing-white.png" class="w-100" alt="">
@@ -801,18 +770,18 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="link-list d-block">
-                            <h5 class="text-white mb-4">CONTAC</h5>
+                            <!-- <h5 class="text-white mb-4">CONTAC</h5> -->
                             <ul class="m-0 p-0">
                                 <li>
-                                    <a href="tel:(406) 555-0120" target="_blank" class="d-flex">
+                                    <a href="tel:9368910005" target="_blank" class="d-flex">
                                         <i class="fa-solid me-3 fa-phone"></i>
-                                        <div class=""> (406) 555-0120</div>
+                                        <div class=""> 9368910005</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:mangcoding123@gmail.com" target="_blank" class="d-flex">
+                                    <a href="mailto:dmissions@mpsgroup.org.in" target="_blank" class="d-flex">
                                         <i class="fa-solid me-3 fa-envelope"></i>
-                                        <div class=""> mangcoding123@gmail.com</div>
+                                        <div class=""> admissions@mpsgroup.org.in</div>
                                     </a>
                                 </li>
                                 <li>
@@ -826,7 +795,7 @@
                     </div>
                     <div class="col-lg-2 col-sm-6">
                         <div class="link-list d-block">
-                            <h5 class="text-white mb-4">SOCIALS</h5>
+                            <!-- <h5 class="text-white mb-4">SOCIALS</h5> -->
                             <ul class="m-0 p-0">
                                 <li> <a href="" target="_blank"><i class="fa-brands me-2 fa-instagram"></i>
                                         INSTAGRAM</a></li>
@@ -843,7 +812,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="link-list d-block">
-                            <h5 class="text-white mb-4">Maps Location</h5>
+                            <!-- <h5 class="text-white mb-4">Maps Location</h5> -->
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14191.582321520144!2d77.930841!3d27.222428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747807a9fdaa63%3A0x1a92d77d318d54dc!2sDr.%20MPS%20Group%20of%20Institutions%20College%20of%20Business%20Studies!5e0!3m2!1sen!2sus!4v1719992312634!5m2!1sen!2sus"
                                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
@@ -872,6 +841,17 @@
 
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysR995ril_hnqdU1WQRofk-PmDQdaJXWlhqvspI2oagEWgDKM2NmHUPDB8K-PsH3jL/exec';
+        const form = document.querySelector('[name="sheet-form"]');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(result => alert("Thanks for Connecting to us..! we will contact you soon..."))
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
     <script>
         // Initialize all sliders
         $('.act-slider').slick({
