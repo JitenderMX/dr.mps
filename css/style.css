@@ -2310,8 +2310,11 @@ main {
 
 .hela-btn {
     margin-top: 20px;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
+}
+.year-of-passing{
+    margin-bottom: 30px;
 }
 
 .hela-btn .th-btn.light {
@@ -2372,7 +2375,9 @@ main {
     flex-direction: column;
     gap: 20px;
 }
-
+.laco-box.right{
+    gap: 50px;
+}
 .laco-box .laco-item {
     padding: 4px;
     border-radius: 50px;
@@ -2436,7 +2441,8 @@ main {
 }
 
 .laco-box .laco-item .laco-text h6 {
-    /* text-transform: capitalize; */
+font-size: calc(var(--th-fs-h6)*.9) !important;
+font-weight: 400;
 }
 
 .laco-box .laco-item:nth-child(odd) {
