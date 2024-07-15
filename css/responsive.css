@@ -471,11 +471,24 @@
         --th-fs-h2: calc(32px*.55);
         --th-fs-h3: calc(28px*.55);
     }
-
+    #landing-page #headers .hl-left {
+        max-width: 100px;
+    }
+    .landing-faq .faq-text {
+        max-width: 100%;
+    }
+    .laco-box.right {
+        gap: 20px;
+    }
     .container-xxl {
         padding: 0px 20px !important;
     }
-
+    .hela-left p{
+        margin-bottom: 0px;
+    }
+    .laco-inner h3{
+        font-size: var(--th-fs-h2);
+    }
     .abl-title {
         font-size: calc(96px*.65);
     }
