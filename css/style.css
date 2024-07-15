@@ -936,6 +936,10 @@ main {
     margin-bottom: 15px;
 }
 
+.footer .link-list ul li a .fa-brands{
+    width: 15px;
+}
+
 .footer .link-list a {
     color: var(--th-text-3);
     font-size: var(--th-fs-h6);
