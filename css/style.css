@@ -92,16 +92,23 @@ a {
     font-size: var(--th-fs-h6);
     font-weight: 700;
     line-height: 1.2;
+    transition: all .5s;
 }
 
 .th-btn.light {
     background-color: var(--th-bg-1);
     color: var(--th-text-3);
 }
+.th-btn.light:hover {
+    background-color: #143447;
+}
 
 .th-btn.dark {
     background-color: var(--th-bg-2);
     color: var(--th-text-3);
+}
+.th-btn.dark:hover{
+    background-color: #d55129;
 }
 
 .show-more {
@@ -740,7 +747,7 @@ main {
     color: var(--th-text-4);
 }
 
-.plpa-statis h1 {
+.plpa-statis h2 {
     color: var(--th-text-5);
 }
 
@@ -1852,7 +1859,9 @@ main {
 #awards-n-recognization-page .slick-dots li:hover button:before {
     color: var(--th-bg-2);
 }
-
+.awards-to-college{
+    padding-bottom: 80px;
+}
 /* ------------- Awards to College Section End ------------- */
 
 
@@ -2427,8 +2436,11 @@ main {
 .laco-box .laco-item .laco-text {
     display: flex;
     align-items: center;
+    /* justify-content: end; */
+    /* text-align: right; */
     gap: 10px;
 }
+
 
 .laco-box .laco-item .laco-num {
     width: 65px;
@@ -2513,7 +2525,7 @@ font-weight: 400;
     transform: skew(20deg) translateX(50px);
 }
 
-#landing-page .re-left h2 {
+.re-left h2 {
     color: var(--th-bg-3);
     position: relative;
     z-index: 10;

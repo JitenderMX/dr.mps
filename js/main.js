@@ -18,3 +18,38 @@ AOS.init();
         // Toggle the arrow icon direction
         $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
     });
+
+    $(".brand-slider").slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 4000,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
