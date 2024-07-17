@@ -2478,6 +2478,13 @@ font-weight: 400;
 .laco-box .laco-item:nth-child(even) {
     background-color: var(--th-bg-1);
 }
+.laco-box.right .laco-item:nth-child(odd) {
+    background-color: var(--th-bg-1);
+}
+
+.laco-box.right .laco-item:nth-child(even) {
+    background-color: var(--th-bg-2);
+}
 
 /* ------------- Landing Courses Section End ------------- */
 

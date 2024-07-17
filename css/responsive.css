@@ -286,13 +286,7 @@
     .whchus .row .col-md-3:nth-child(7) {
         border-right: 1px solid var(--th-text-2);
     }
-    .laco-box.right .laco-item:nth-child(odd) {
-        background-color: var(--th-bg-1);
-    }
-    
-    .laco-box.right .laco-item:nth-child(even) {
-        background-color: var(--th-bg-2);
-    }
+
     .ouca-head {
         padding: 30px;
     }
