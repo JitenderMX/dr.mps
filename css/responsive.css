@@ -483,9 +483,9 @@
     .container-xxl {
         padding: 0px 20px !important;
     }
-    .hela-left p{
+    /* .hela-left p{
         margin-bottom: 0px;
-    }
+    } */
     .laco-inner h3{
         font-size: var(--th-fs-h2);
     }

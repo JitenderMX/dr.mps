@@ -2291,7 +2291,7 @@ main {
 }
 
 .hela-left h1:nth-child(1) {
-    font-size: var(--th-fs-h6);
+    font-size: var(--th-fs-h3);
     font-weight: 100;
     margin-bottom: 20px;
 }
@@ -2307,7 +2307,7 @@ main {
 .hela-left p {
     display: block;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: block;
 }
 
@@ -2657,4 +2657,7 @@ font-weight: 400;
 
 #footers .footer .logo {
     margin: auto;
+}
+#footers .footer .link-list a {
+    font-size: calc(var(--th-fs-h6)*.8);
 }
