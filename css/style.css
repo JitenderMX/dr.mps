@@ -290,13 +290,13 @@ main {
 }
 
 .header .navbar-brand {
-    max-width: 220px;
+    max-width: 135px;
     width: 100%;
     transition: all .5s;
 }
 
 #header.active .navbar-brand {
-    max-width: 150px;
+    max-width: 110px;
 }
 
 .header .nav-link {
