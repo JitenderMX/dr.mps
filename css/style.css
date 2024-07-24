@@ -441,6 +441,9 @@ main {
     align-items: center;
     text-align: center;
 }
+.hh-text .th-btn{
+   transform: scale(1.3);
+}
 
 .hh-text h5 {
     color: var(--th-text-3);
@@ -954,8 +957,11 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: all .5s;
 }
-
+.footer .link-list a:hover{
+    text-decoration: underline;
+}
 .footer .logo {
     max-width: 250px;
 }
@@ -1867,9 +1873,9 @@ main {
 
 
 /* ----------======================== Life At Dr.MPS Page ========================---------- */
-#life-at-mps-page .mh-line {
+/* #life-at-mps-page .mh-line {
     height: 32px;
-}
+} */
 
 /* 33.Community Section Start ------------------------------ */
 .community {
