@@ -269,6 +269,42 @@ main {
     margin: 0;
 }
 
+#thank{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#thank.active{
+    display: flex;
+}
+.thank-container{
+    max-width: 300px;
+    background-color: var(--th-bg-4);
+    padding: 30px;
+    border-radius: 50px;
+}
+.th-close{
+    font-size: var(--th-fs-h5);
+    color: var(--th-bg-1);
+    cursor: pointer;
+}
+.th-close .fa-circle-xmark{
+    font-size: var(--th-fs-h2);
+    color: var(--th-bg-1);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
 /* ------------- Breadcrum Section End ------------- */
 
 /* ------------- Base End ------------- */

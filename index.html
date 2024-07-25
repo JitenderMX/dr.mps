@@ -121,13 +121,12 @@
                                         <option value="B.Sc BIOTECHNOLOGY">B.Sc BIOTECHNOLOGY</option>
                                         <option value="MBA">MBA</option>
                                         <option value="M.Sc BIOTECHNOLOGY">M.Sc BIOTECHNOLOGY</option>
-                                        <!-- <option value="BBA">BBA</option> -->
-                                        <!-- <option value="PGDMA/GDMA">PGDMA/GDMA</option> -->
                                         <option value="B.COM">B.COM</option>
                                         <option value="BCA">BCA</option>
                                         <option value="BBA">BBA</option>
                                         <option value="B.Sc">B.Sc</option>
-                                        <!-- <option value="BIOTECHNOLOGY">BIOTECHNOLOGY</option> -->
+                                        <option value="B.Sc Tourism and Hospitality">B.Sc Tourism and Hospitality </option>
+                                        <option value="BBA Logistics"> BBA Logistics </option>
                                     </select>
                                 </div>
                                 <div class="year-of-passing">
@@ -387,7 +386,8 @@
                                             <option value="BCA">BCA</option>
                                             <option value="BBA">BBA</option>
                                             <option value="B.Sc">B.Sc</option>
-                                            <!-- <option value="BIOTECHNOLOGY">BIOTECHNOLOGY</option> -->
+                                            <option value="B.Sc Tourism and Hospitality">B.Sc Tourism and Hospitality </option>
+                                            <option value="BBA Logistics"> BBA Logistics </option>
                                         </select>
                                     </div>
                                     <div class="year-of-passing">
@@ -748,8 +748,14 @@
     </main>
     <!-- Main Section End -->
 
-
-
+    <!-- <div id="thank">
+        <div class="thank-container">
+            <div class="th-close mb-2 text-end"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="th-pera">
+                <p class="m-0">Thank you for reaching out. We will contact you soon.</p>
+            </div>
+        </div>
+    </div> -->
 
     <!-- Footer Section Start -->
     <footer id="footers">
@@ -763,7 +769,7 @@
                             </a>
                         </div>
                         <div class="subscribe mt-5">
-                            <form action="" method="post">
+                            <form>
                                 <div class="d-flex justify-content-between">
                                     <input type="text" name="subscribe" placeholder="Enter Email">
                                     <button type="submit" class="th-btn dark">SUBSCRIBE</button>
@@ -856,7 +862,11 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(result => alert("Thanks for Connecting to us..! we will contact you soon..."))
+                .then(result =>{
+            // $('#thank').toggleClass('active')
+            alert('Thank you for reaching out. We will contact you soon.');
+            location.reload();
+                })
                 .catch(error => console.error('Error!', error.message));
         });
     </script>
@@ -868,7 +878,10 @@
             speed: 300,
             slidesToShow: 1
         });
-
+        $('.th-close .fa-circle-xmark').click(function(){
+            $('#thank').toggleClass('active');
+            location.reload();
+        })
         // Attach click events for navigation buttons
         $('#act-left .fa-solid').click(function () {
             $('.act-slider').slick('slickPrev');
